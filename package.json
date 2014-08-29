@@ -1,6 +1,6 @@
 {
   "name": "float-clamp",
-  "description": "Floating Point Precision Aware Range Clamping",
+  "description": "Floating-point Epsilon-aware Interval Clamping",
   "version": "1.0.0",
   "homepage": "https://github.com/imbcmdth/float-clamp",
   "repository": {
