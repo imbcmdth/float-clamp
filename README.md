@@ -46,19 +46,19 @@ See below for clamp generators for other precision floating point numbers (and e
 
 ## API
 
-`floatClamp.makeDoubleClamper(*range*)`
+`floatClamp.makeDoubleClamper(rangeString)`
 
 Shown above, generates clampers that calculates epsilons for double-precision floating point numbers. Every `Number` in JavaScript is a double as well as `Float64Array` typed arrays.
 
-`floatClamp.makeSingleClamper(*range*)`
+`floatClamp.makeSingleClamper(rangeString)`
 
 Generates clampers that calculates epsilons for single-precision floating point numbers. In other words, `Float32Array` typed arrays.
 
-`floatClamp.makeHalfClamper(*range*)`
+`floatClamp.makeHalfClamper(rangeString)`
 
 Generates clampers that calculates epsilons for half-precision floating point numbers. I'm not sure half-floats (16 bit storage) are even available in JavaScript but they are heavily used in GPUs so I included it for possible future proofing in case WebGL or WebCL add support (ie. `Float16Array`).
 
-`floatClamp.makeIntegerClamper(*range*)`
+`floatClamp.makeIntegerClamper(rangeString)`
 
 Integer clamping is easy, right?
 
